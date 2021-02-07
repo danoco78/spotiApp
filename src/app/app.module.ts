@@ -9,12 +9,19 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/share/navbar/navbar.component';
+import { TarjetasComponent } from './components/share/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/share/loading/loading.component';
 
 // importar rutas
 import { ROUTES } from './app.routes';
 
 // services
 import { SpotifyService } from './services/spotify.service';
+
+// pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe'
+
 
 
 
@@ -24,7 +31,11 @@ import { SpotifyService } from './services/spotify.service';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    DomseguroPipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
